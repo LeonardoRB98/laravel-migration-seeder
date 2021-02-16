@@ -11,12 +11,12 @@ class ArticlesTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run(Faker $Faker)
+    public function run(Faker $faker)
     {
         for($i=0; $i < 20; $i++) {
             $article = new Article();
-            $article->title = sentence(4);
-            $article->subtitle = sentence(6);
+            $article->title = $faker->sentence(6, true);
+            $article->subtitle = $faker->sentence(4, true);
             $article->author = $faker->name;
             $article->text = $faker->text(800);;
             $article->pubblication_date = $faker->DateTime();
