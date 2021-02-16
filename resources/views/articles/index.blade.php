@@ -5,8 +5,9 @@
 @endsection
 
 @section('main-content')
-    <table>
-        <thead>
+
+    <table class="table table-striped">
+        <thead class="table-dark text-light">
             <th>title</th>
             <th>subtitle</th>
             <th>author</th>
@@ -14,7 +15,7 @@
         </thead>
         <tbody>
             @foreach($articles as $item)
-            <tr>
+            <tr class="">
                 <td>{{ $item->title }}</td>
                 <td>{{ $item->subtitle }}</td>
                 <td>{{ $item->author }}</td>
