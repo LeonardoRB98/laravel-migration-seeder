@@ -18,7 +18,7 @@ class ArticlesTableSeeder extends Seeder
             $article->title = $faker->sentence(6, true);
             $article->subtitle = $faker->sentence(4, true);
             $article->author = $faker->name;
-            $article->text = $faker->text(800);;
+            $article->text = $faker->text(800);
             $article->pubblication_date = $faker->DateTime();
             $article->created_at = $faker->DateTime();
             $article->updated_at = $faker->DateTime();
